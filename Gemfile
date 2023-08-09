@@ -80,3 +80,6 @@ gem 'devise'
 
 # Use CanCanCan for authorization
 gem 'cancancan'
+
+gem 'bootstrap'
+gem 'bootstrap_form'
