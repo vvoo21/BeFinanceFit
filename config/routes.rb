@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
+  # Defines the root path route ("/")
+  root "home#index"
+
   devise_for :users
   
-  # Defines the root path route ("/")
-  root "categories#index"
-
-  resources :categories
-  resources :transactions
-  resources :users
+  resources :categories do
+    resources :expenses
+  end
 end
