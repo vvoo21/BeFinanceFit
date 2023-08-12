@@ -19,6 +19,10 @@
     <%= form.text_field :amount %>
   </div>
 
+  <div class="form-group">
+    <%= form.collection_radio_buttons(:category_id, [@selected_category], :id, :name, { item_wrapper_class: 'radio' }) %>
+  </div>
+
   <div>
     <%= form.submit %>
   </div>
