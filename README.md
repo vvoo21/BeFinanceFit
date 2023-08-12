@@ -49,9 +49,10 @@
   </ul>
 </details>
 
-### Live Demo <a name="live-demo"></a>
+### Links <a name="Links"></a>
 
 [Live Demo](https://app-render-x29z.onrender.com)
+- Original design idea by [Gregoire Vella on Behance](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=)
 
 ### Key Features <a name="key-features"></a>
 
@@ -156,6 +157,7 @@ Give a start if you like this project!
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 - I would like to thank the Microverse program!
+- This is a style solution  to the [Snapscan - iOs design and branding by Gregoire Vella](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
