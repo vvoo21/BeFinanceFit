@@ -5,6 +5,7 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
+    - [Live Demo](#live-demo)
     - [Key Features](#key-features)
   - [Entity Relationship Diagram](#entity-relationship-diagram)
 - [💻 Getting Started](#getting-started)
@@ -48,6 +49,10 @@
   </ul>
 </details>
 
+### Live Demo <a name="live-demo"></a>
+
+[Live Demo](https://app-render-x29z.onrender.com)
+
 ### Key Features <a name="key-features"></a>
 
 - Register and log in.
@@ -56,7 +61,7 @@
 
 ## Entity Relationship Diagram <a name="entity-relationship-diagram"></a>
 
-![](./)
+![](./erd_diagram.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
