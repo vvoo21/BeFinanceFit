@@ -1,12 +1,16 @@
-<div id="<%= dom_id expense %>">
+<div class="d-flex flex-column p-2 bg-white border" id="<%= dom_id expense %>">
   <p>
-    <strong>Name:</strong>
-    <%= expense.name %>
+    <strong><%= "Transaction N°#{expense.id }: #{expense.name}" %></strong>
   </p>
 
   <p>
-    <strong>Amount:</strong>
-    <%= expense.amount %>
+    <%= image_tag("time.png") %>
+    <%= expense.created_at.strftime("%d %b %Y at %I:%M%P")  %>
   </p>
+
+  <div class="d-flex justify-content-between">
+    <p>Amount</p>
+    <p><%= expense.amount %></p>
+  </div>
 
 </div>
