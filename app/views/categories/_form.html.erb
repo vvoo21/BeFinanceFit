@@ -1,4 +1,4 @@
-<%= form_with(model: category) do |form| %>
+<%= bootstrap_form_with(model: category, html: { class: 'p-2' }) do |form| %>
   <% if category.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(category.errors.count, "error") %> prohibited this category from being saved:</h2>
@@ -12,13 +12,11 @@
   <% end %>
 
   <div>
-    <%= form.label :name, style: "display: block" %>
     <%= form.text_field :name %>
   </div>
 
   <div>
-    <%= form.label :icon, style: "display: block" %>
-    <%= form.text_field :icon %>
+    <%= form.select :icon,  [ ['👔'], ['👗'], ['🏠'], ['❤️'], ['✈️'], ['🐶'], ['👨‍👩‍👧‍👦'], ['🎉'], ['🛒'], ['🍕'], ['🗺️'], ['🏥'], ['🏈'], ['⛺'], ['⛱️'], ['🚲'], ['🔨'], ['📆'], ['🔒'], ['📌'], ['🕙'], ['🧹']] %>
   </div>
 
   <div>
