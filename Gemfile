@@ -73,7 +73,7 @@ group :test do
 end
 
 # Use Rubocop
-gem 'rubocop', '>= 1.0', '< 2.0'
+gem 'rubocop'
 
 # Use the devise gem as the session and account manager for the application
 gem 'devise'

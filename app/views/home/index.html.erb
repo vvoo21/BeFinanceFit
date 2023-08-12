@@ -1,1 +1,7 @@
-<h1>Home#index</h1>     
+<div class="p-5 d-flex flex-column align-items-center justify-content-between h_400px">
+  <h1 class="display-2">BeFinanceFit</h1>
+  <div class="d-flex flex-column w-100 gap-2">
+    <%= link_to "Login", new_user_session_path, class: 'btn btn-primary' %>
+    <%= link_to "Sign up", new_user_registration_path, class: 'btn btn-light'  %>
+  </div>
+</div>
