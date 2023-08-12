@@ -14,6 +14,7 @@ class ExpensesController < ApplicationController
   # GET /expenses/new
   def new
     @expense = Expense.new
+    @selected_category = current_user.categories.find(params[:category_id])
   end
 
   # GET /expenses/1/edit
