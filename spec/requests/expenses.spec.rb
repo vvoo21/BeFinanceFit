@@ -2,8 +2,8 @@ require 'rails_helper'
 
 RSpec.describe ExpensesController, type: :controller do
   let(:user) { User.create(name: 'vanessa', email: 'user@example.com', password: 'password') }
-  let(:category) { Category.create(name: 'Food', icon: '🍕', user: user) }
-  let(:expense) { Expense.create(name: 'Groceries', amount: 50, user: user, category: category) }
+  let(:category) { Category.create(name: 'Food', icon: '🍕', user:) }
+  let(:expense) { Expense.create(name: 'Groceries', amount: 50, user:, category:) }
 
   before do
     allow(controller).to receive(:authenticate_user!).and_return(true)

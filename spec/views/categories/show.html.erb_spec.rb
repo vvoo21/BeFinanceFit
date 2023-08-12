@@ -37,4 +37,3 @@ RSpec.describe 'categories/show.html.erb', type: :view do
     expect(rendered).to have_css('.fixed-bottom')
   end
 end
-
