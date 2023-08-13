@@ -1,0 +1,9 @@
+<section>
+  <div class="bg-primary p-4 d-flex align-items-center justify-content-between">
+    <%= link_to image_tag("icons8-izquierda-30.png"), categories_path %>
+    <h2 class="fs-4 text-white font">New category</h2>
+  </div>
+
+  <%= render "form", category: @category %>
+</section>
+

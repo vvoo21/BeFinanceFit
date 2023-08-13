@@ -1,0 +1,34 @@
+<section>
+  <div class="bg-primary p-4 d-flex align-items-center justify-content-between">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <%= image_tag("menu.png") %>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <%= link_to 'Categories', categories_path, class: 'nav-link text-white' %>
+          </li>
+          <li class="nav-item">
+            <%= button_to "Logout", destroy_user_session_path, method: :delete, class: 'nav-link text-white btn secundary-text'  %>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <h2 class="fs-4 text-white font">CATEGORIES</h2>
+  </div>
+
+  <p style="color: green"><%= notice %></p>
+
+  <div class="d-flex flex-column gap-2 bg-light p-2 container mt-3 mb-5">
+    <% @categories.each do |category| %>
+      <%= link_to category, class: 'no_txt_decoration' do %> 
+        <%= render category %>
+      <% end %>
+   <% end %>
+  </div>
+
+  <div class="fixed-bottom bg-success btn-block p-3">
+     <%= link_to "New category", new_category_path, class: 'align-self-center w-100 btn btn-outline-light text-white' %>
+  </div>
+</section>

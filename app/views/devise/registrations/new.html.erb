@@ -1,0 +1,27 @@
+<section>
+  <div class="bg-primary p-2 d-flex align-items-center justify-content-between">
+    <%= link_to image_tag("icons8-izquierda-30.png"), root_path %>
+    <h2 class="fs-4 text-white font">REGISTER</h2>
+    <%= link_to 'Next', '#', class: 'fs-6 text-white no_txt_decoration font', onclick: "document.getElementById('register-submit').click(); return false;" %>
+  </div>
+
+  <%= bootstrap_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { class: 'p-2' }) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+    
+    <div class="field">
+     <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
+    </div>
+
+    <div class="field">
+      <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    </div>
+
+    <div class="field">
+      <%= f.password_field :password, autocomplete: "new-password" %>
+    </div>
+
+    <div class="actions d-none">
+      <%= f.submit "Sign up", id: 'register-submit' %>
+    </div>
+  <% end %>
+</section>
